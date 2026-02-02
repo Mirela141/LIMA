@@ -1,100 +1,145 @@
-<h1>Classificação</h1>
-<h2>Rodada 1</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação</title>
 
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 
-<table border="1" cellpadding="10">
-    <thead>
-        <tr>
-            <th>Ordem</th>
-            <th>Time</th>
-            <th>Pontos</th>
-            <th>Jogos</th>
-        </tr>
-    </thead>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
 
-    <tbody>
-        <tr>
-            <td><strong>1</strong></td>
-            <td><img src="images.png" width="80"></td>
-            <td><strong>7</strong></td>
-            <td><strong>4</strong></td>
-        </tr>
+        th {
+            font-size: 22px;
+        }
 
-        <tr>
-            <td><strong>2</strong></td>
-            <td><img src="images.jpg" width="80"></td>
-            <td><strong>4</strong></td>
-            <td><strong>3</strong></td>
-        </tr>
+        td {
+            text-align: center;
+        }
 
-        <tr>
-            <td><strong>3</strong></td>
-            <td><img src="images (1).png" width="80"></td>
-            <td><strong>5</strong></td>
-            <td><strong>4</strong></td>
-        </tr>
+        form {
+            width: 50%;
+            margin: 30px auto;
+        }
 
-        <tr>
-            <td><strong>4</strong></td>
-            <td><img src="i.png" width="80"></td>
-            <td><strong>5</strong></td>
-            <td><strong>6</strong></td>
-        </tr>
-    </tbody>
-</table>
+        fieldset {
+            text-align: left;
+            padding: 15px;
+        }
 
-<br><br>
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 
+<body>
 
-<form>
-    <fieldset>
-        <legend>Dados do seu time</legend>
+    <h1>Classificação</h1>
+    <h2>Rodada 1</h2>
 
-       <label>Qual seu time:</label>
-        <select>
-            <option>São Paulo</option>
-            <option>Vasco</option>
-            <option>Corinthians</option>
-            <option>Flamengo</option>
-        </select><br><br>
+    <!-- TABELA -->
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Ordem</th>
+                <th>Time</th>
+                <th>Pontos</th>
+                <th>Jogos</th>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td><img src="images.png" width="80"></td>
+                <td><strong>7</strong></td>
+                <td><strong>4</strong></td>
+            </tr>
 
-        <label>Seu time tem mundial:</label>
-        <select>
-            <option>Sim</option>
-            <option>Não</option>
-        </select><br><br>
+            <tr>
+                <td><strong>2</strong></td>
+                <td><img src="images.jpg" width="80"></td>
+                <td><strong>4</strong></td>
+                <td><strong>3</strong></td>
+            </tr>
 
-        <label>Quantos brasileiros seu time possui:</label>
-        <input type="number"><br><br>
+            <tr>
+                <td><strong>3</strong></td>
+                <td><img src="images (1).png" width="80"></td>
+                <td><strong>5</strong></td>
+                <td><strong>4</strong></td>
+            </tr>
 
-        <label>Deixe seu comentário:</label>
-        <input type="text">
-    </fieldset>
+            <tr>
+                <td><strong>4</strong></td>
+                <td><img src="i.png" width="80"></td>
+                <td><strong>5</strong></td>
+                <td><strong>6</strong></td>
+            </tr>
+        </tbody>
+    </table>
 
-    <br>
+    <br><br>
 
-    <fieldset>
-        <legend>Estou feliz</legend>
-        <input type="checkbox"> Sou muito alegre
-        <input type="checkbox"> Sou feliz
-        <input type="checkbox"> Não sou feliz
-    </fieldset>
+    <!-- FORMULÁRIO -->
+    <form>
+        <fieldset>
+            <legend>Dados do seu time</legend>
 
-    <br>
+            <label>Qual seu time:</label><br>
+            <select>
+                <option>São Paulo</option>
+                <option>Vasco</option>
+                <option>Corinthians</option>
+                <option>Flamengo</option>
+            </select><br><br>
 
-    <fieldset>
-        <legend>Pagamento</legend>
-        <input type="checkbox"> Cartão Crédito
-        <input type="checkbox"> Cartão Débito
-        <input type="checkbox"> Pix
-    </fieldset>
+            <label>Seu time tem mundial:</label><br>
+            <select>
+                <option>Sim</option>
+                <option>Não</option>
+            </select><br><br>
 
-    <br>
+            <label>Quantos brasileiros seu time possui:</label><br>
+            <input type="number"><br><br>
 
-    <button type="submit">Enviar</button>
-</form>
+            <label>Deixe seu comentário:</label><br>
+            <input type="text">
+        </fieldset>
 
+        <br>
 
+        <fieldset>
+            <legend>Estou feliz</legend>
+            <input type="checkbox"> Sou muito alegre<br>
+            <input type="checkbox"> Sou feliz<br>
+            <input type="checkbox"> Não sou feliz
+        </fieldset>
 
+        <br>
 
+        <fieldset>
+            <legend>Pagamento</legend>
+            <input type="checkbox"> Cartão Crédito<br>
+            <input type="checkbox"> Cartão Débito<br>
+            <input type="checkbox"> Pix
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
